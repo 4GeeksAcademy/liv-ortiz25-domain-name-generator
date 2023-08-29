@@ -6,22 +6,22 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = function generateDomainName() {
-  //write your code here
   const pronoun = ["the", "our"];
   const adj = ["great", "big", "dazzling", "small"];
   const noun = ["jogger", "racoon", "book", "padawan"];
   const extensions = ["com", "net", "us", "io"];
 
-  const aleatoryPronoun = pronoun[Math.floor(Math.random() * pronoun.length)];
-
-  const aleatoryAdj = adj[Math.floor(Math.random() * adj.length)];
-
-  const aleatoryNoun = noun[Math.floor(Math.random() * noun.length)];
-
-  const aleatoryExtensions =
-    extensions[Math.floor(Math.random() * extensions.length)];
-
-  console.log(
-    `${aleatoryPronoun}${aleatoryAdj}${aleatoryNoun}.${aleatoryExtensions}`
-  );
+  for (i = 0; i < pronoun.length; i++);
+  {
+    for (r = 0; r < adj.length; r++);
+    {
+      for (m = 0; m < noun.length; m++);
+      {
+        for (h = 0; h < extensions.length; h++);
+        {
+          console.log(pronoun[i] + adj[r] + noun[m] + extensions[h]);
+        }
+      }
+    }
+  }
 };
